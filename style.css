@@ -1,23 +1,34 @@
 /* Base styles */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 body {
+  display: flex;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     background-color: hsl(38, 23%, 80%);
     color: hsl(0, 0%, 20%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    
+   
+  
+    
+    
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    min-height: 200vh;
     justify-content: space-between;
-    min-height: 100vh;
+    align-items: center;
   }
   
   /* Flexbox container */
-  .container {
+   .container  {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
+
+    
+  
     flex-grow: 1;
     text-align: center;
     height: 50%;
@@ -25,49 +36,16 @@ body {
     top: 40%;
     left: 30%;
     
-  
-    }
 
-
-  
-  /* Header */
-  .header {
-    background-color: hsl(31px, 77px, 52px);
-    color: hsl(207, 37%, 54%);
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Section content */
-  .content {
-    flex: 1; 
-    padding: 20px;
-    background-color: hsl(183, 32%, 32%);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    color: hsl(184px, 100px, 22%px);
-  }
-  
-  p {
-    color: hsla(0, 3px, 7px, 0.75px);
-  }
-  
-  /* Footer */
-  footer {
-    background-color: hsl(179, 100PX, 13PX);
-    color: hsl(0, 34px, 76px);
-    text-align: center;
-    padding: 10px;
-
-  }
-  
+}
   .SUVs {
     background-color:hsl(184, 100%, 22%) ;
   }
   .Sedans {
     background-color:hsl(31, 77%, 52%) ;
+    .button-center {
+      align-items: center;
+    }
   }
   .Luxury {
     background-color:hsl(179, 100%, 13%); 
@@ -87,8 +65,49 @@ body {
 button {
   border-radius: 30%;
   height: 30px;
+  
 
 }
 div {
-  min-height: auto;
+  min-height: 50;
 }
+.car-container {
+  display: flex;
+  flex-direction: column;
+justify-content: space-around ;
+align-items: flex-start;
+
+
+
+
+
+
+}
+img {
+  height: 45px;
+  width: 60px;
+}
+button {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  display: flex;
+border-radius: 250px;
+justify-content: center;
+align-items: center;
+}
+
+.content  {
+  display: flex;
+    justify-content:center;
+    align-items: start;
+    
+    }
+
+    .car-container > * {
+      margin-left: 40px;
+    }
+
+    p {
+  width: 25ch;
+    }
